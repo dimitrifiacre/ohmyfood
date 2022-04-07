@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+body {
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    height: 63px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    @include flexbox-center;
+    position: relative;
+
+    &__logo {
+        font-family: 'Shrikhand', cursive;
+        font-size: 30px;
+        text-decoration: none;
+        color: #101010;
+    }
+}
