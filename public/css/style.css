@@ -33,6 +33,39 @@ section {
   margin: auto;
   max-width: 1440px;
 }
+.container--footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 30px 20px;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.footer__list a:hover {
+  text-decoration: underline;
+}
+.footer__icon {
+  color: #fff;
+  margin-right: 8px;
+}
 
 .location {
   background-color: #EAEAEA;
@@ -85,10 +118,9 @@ section {
   justify-content: space-between;
   gap: 25px;
 }
-
-.step {
+.process__step {
   background-color: #F6F6F6;
-  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
   font-weight: 500;
   padding: 28px 35px;
@@ -96,7 +128,7 @@ section {
   display: flex;
   margin: 0px 14px;
 }
-.step__number {
+.process__number {
   background-color: #9356DC;
   color: #fff;
   font-size: 14px;
@@ -105,10 +137,63 @@ section {
   border-radius: 50px;
   transform: translateX(-185%);
 }
-.step__icon {
+.process__icon {
   color: #7E7E7E;
   font-size: 20px;
   margin-right: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  padding: 25px 0 0 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.07);
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.card__badge {
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 3px;
+  padding: 6px 12px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.card__image {
+  display: flex;
+}
+.card__image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.card__title {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+.card__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+}
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px 20px 15px;
+}
+.card__icon {
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
