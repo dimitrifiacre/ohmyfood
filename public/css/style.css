@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background: #F6F6F6;
+  background: #fff;
 }
 
 h2 {
@@ -93,6 +93,7 @@ section {
 .hero {
   text-align: center;
   padding: 40px 20px 70px 20px;
+  background-color: #F6F6F6;
 }
 .hero__subtitle {
   font-size: 18px;
@@ -149,6 +150,10 @@ section {
   margin-right: 25px;
 }
 
+.restaurants {
+  background-color: #F6F6F6;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -200,6 +205,73 @@ section {
 }
 .card__icon {
   font-size: 24px;
+}
+
+.banner img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.menu {
+  border-radius: 40px 40px 0 0;
+  background-color: #F6F6F6;
+  position: relative;
+  margin-top: -50px;
+}
+.menu__header {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #101010;
+}
+.menu__icon {
+  font-size: 24px;
+  margin-right: 20px;
+}
+.menu__list {
+  margin-top: 30px;
+}
+.menu__list h3 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  margin: 20px 0 22px 6px;
+}
+.menu__list h3:after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  top: 24px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 12px 22px 12px 10px;
+  justify-content: space-between;
+}
+.list__title {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+}
+.list__subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.list__price {
+  font-weight: 700;
+  font-size: 14px;
+  color: #353535;
 }
 
 /*# sourceMappingURL=style.css.map */

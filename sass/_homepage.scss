@@ -18,6 +18,7 @@
 .hero {
     text-align: center;
     padding: 40px 20px 70px 20px;
+    background-color: #F6F6F6;
 
     &__subtitle {
         font-size: 18px;
@@ -79,6 +80,10 @@
         font-size: 20px;
         margin-right: 25px;
     }
+}
+
+.restaurants {
+    background-color: #F6F6F6;
 }
 
 .cards {
