@@ -28,6 +28,13 @@ h2 {
         text-decoration: none;
         color: #101010;
     }
+
+    &__arrow {
+        position: absolute;
+        color: #353535;
+        font-size: 18px;
+        left: 25px;
+    }
 }
 
 section {

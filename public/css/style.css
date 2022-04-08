@@ -24,6 +24,12 @@ h2 {
   text-decoration: none;
   color: #101010;
 }
+.header__arrow {
+  position: absolute;
+  color: #353535;
+  font-size: 18px;
+  left: 25px;
+}
 
 section {
   padding: 50px 20px;
