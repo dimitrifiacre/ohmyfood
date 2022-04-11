@@ -1,6 +1,6 @@
 .location {
     background-color: #EAEAEA;
-    color: #353535;
+    color: $color-dark_grey;
     padding: 0;
     height: 50px;
     @include flexbox-center;

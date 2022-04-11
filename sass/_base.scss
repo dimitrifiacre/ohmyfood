@@ -4,6 +4,9 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-white: #fff;
+$color-dark_grey: #353535;
+
+$font-shrikhand: 'Shrikhand', cursive;
 
 body {
     margin:0;
@@ -23,7 +26,7 @@ h2 {
     position: relative;
 
     &__logo {
-        font-family: 'Shrikhand', cursive;
+        font-family: $font-shrikhand;
         font-size: 30px;
         text-decoration: none;
         color: #101010;
@@ -31,7 +34,7 @@ h2 {
 
     &__arrow {
         position: absolute;
-        color: #353535;
+        color: $color-dark_grey;
         font-size: 18px;
         left: 25px;
     }
@@ -104,7 +107,7 @@ section {
 }
 
 .footer {
-    background-color: #353535;
+    background-color: $color-dark_grey;
     padding: 30px 20px;
 
     & a {
@@ -113,7 +116,7 @@ section {
     }
 
     &__logo {
-        font-family: 'Shrikhand', cursive;
+        font-family: $font-shrikhand;
         font-size: 20px;
     }
 
