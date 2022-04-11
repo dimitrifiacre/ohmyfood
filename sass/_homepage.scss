@@ -26,19 +26,6 @@
         padding: 12px 0 30px 0;
         margin-top: 0;
     }
-
-    &__button {
-        background-image: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
-        color: $color-white;
-        text-decoration: none;
-        padding: 15.5px 22px;
-        border-radius: 50px;
-        transition: 0.5s;
-
-        &:hover {
-            background: linear-gradient(180deg, #FF94E1 0%, #A16BE0 100%);
-        }
-    }
 }
 
 .process {

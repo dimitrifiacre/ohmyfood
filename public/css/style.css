@@ -46,6 +46,22 @@ section {
   flex-direction: column;
 }
 
+.btn {
+  background-color: #999999;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  color: #fff;
+  text-decoration: none;
+  padding: 15.5px 22px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #fff;
+}
+.btn--menu {
+  padding: 15.5px 48.5px;
+}
+
 .heart-btn {
   position: relative;
   display: flex;
@@ -133,17 +149,6 @@ section {
   font-weight: 300;
   padding: 12px 0 30px 0;
   margin-top: 0;
-}
-.hero__button {
-  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  color: #fff;
-  text-decoration: none;
-  padding: 15.5px 22px;
-  border-radius: 50px;
-  transition: 0.5s;
-}
-.hero__button:hover {
-  background: linear-gradient(180deg, #FF94E1 0%, #A16BE0 100%);
 }
 
 .process {
