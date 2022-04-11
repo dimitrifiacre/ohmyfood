@@ -51,6 +51,40 @@ section {
     }
 }
 
+.heart-btn {
+    position: relative;
+    @include flexbox-center;
+
+    &--outline {
+        position: absolute;
+    }
+
+    &--solid {
+        position: absolute;
+        background: linear-gradient(180deg, $color-primary 0%, $color-secondary 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+        transition: transform 300ms;
+    }
+    
+    &:hover {
+        cursor: pointer;
+        .heart-btn--solid {
+            transform: scale(1);
+        }
+        .heart-btn--outline {
+            background: linear-gradient(180deg, $color-primary 0%, $color-secondary 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
 .footer {
     background-color: #353535;
     padding: 30px 20px;

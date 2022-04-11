@@ -46,6 +46,39 @@ section {
   flex-direction: column;
 }
 
+.heart-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heart-btn--outline {
+  position: absolute;
+}
+.heart-btn--solid {
+  position: absolute;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  transform: scale(0);
+  transition: transform 300ms;
+}
+.heart-btn:hover {
+  cursor: pointer;
+}
+.heart-btn:hover .heart-btn--solid {
+  transform: scale(1);
+}
+.heart-btn:hover .heart-btn--outline {
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
 .footer {
   background-color: #353535;
   padding: 30px 20px;
@@ -210,7 +243,7 @@ section {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 25px 20px 15px;
+  padding: 20px 40px 20px 15px;
 }
 .card__icon {
   font-size: 24px;
@@ -232,6 +265,7 @@ section {
   font-family: "Shrikhand", cursive;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 18px;
   color: #101010;
 }
