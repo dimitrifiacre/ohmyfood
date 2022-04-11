@@ -307,6 +307,12 @@ section {
   left: 0;
   top: 24px;
 }
+.menu__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 45px 0 8px 0;
+}
 
 .list {
   display: flex;
