@@ -135,6 +135,15 @@ section {
   display: flex;
   margin: 0px 14px;
 }
+.process__step:hover {
+  cursor: pointer;
+}
+.process__step:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+}
+.process__step:hover .process__icon {
+  color: #9356DC;
+}
 .process__number {
   background-color: #9356DC;
   color: #fff;

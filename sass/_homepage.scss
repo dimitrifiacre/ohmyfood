@@ -63,6 +63,16 @@
         width: 100%;
         display: flex;
         margin: 0px 14px;
+
+        &:hover {
+            cursor: pointer;
+            & {
+                background-color: rgba($color-primary, 0.1);
+            }
+            .process__icon {
+                color: $color-primary;
+            }
+        }
     }
 
     &__number {
