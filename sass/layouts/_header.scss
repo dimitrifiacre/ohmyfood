@@ -1,0 +1,21 @@
+.header {
+    height: 63px;
+    background-color: $color-white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    @include flexbox-center;
+    position: relative;
+
+    &__logo {
+        font-family: $font-shrikhand;
+        font-size: 30px;
+        text-decoration: none;
+        color: #101010;
+    }
+
+    &__arrow {
+        position: absolute;
+        color: $color-dark_grey;
+        font-size: 18px;
+        left: 25px;
+    }
+}

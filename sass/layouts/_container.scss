@@ -1,0 +1,13 @@
+section {
+    padding: 50px 20px;
+}
+
+.container {
+    margin: auto;
+    max-width: 1440px;
+
+    &--footer {
+        @include flexbox-center;
+        flex-direction: column;
+    }
+}

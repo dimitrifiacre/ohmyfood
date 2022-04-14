@@ -1,4 +1,5 @@
-@import "mixins";
-@import "base";
-@import "homepage";
-@import "menupage";
+@import "./utils/mixins", "./utils/variables";
+@import "./base/reset", "./base/typography";
+@import "./layouts/container", "./layouts/footer", "./layouts/header";
+@import "./components/btn-heart", "./components/btn";
+@import "./pages/homepage", "./pages/menupage";
