@@ -1,3 +1,38 @@
+.loader {
+    background: rgba($color-white, 0.95);
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: loader 2s 2s ease-out both;
+    
+    &__container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__circle {
+        background-color: $color-primary;
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        margin: 10px;
+        animation: bounce 1s ease-in-out;
+        &:nth-child(2) {
+            animation-delay: .2s;
+        }
+        &:nth-child(3) {
+            animation-delay: .4s;
+        }
+        &:nth-child(4) {
+            animation-delay: .6s;
+        }
+    }
+}
+
 .location {
     background-color: #EAEAEA;
     color: $color-dark_grey;
@@ -51,6 +86,10 @@
         display: flex;
         margin: 0px 14px;
         transition: .3s;
+
+        &:last-child {
+            margin: 0 0 0 14px;
+        }
 
         &:hover {
             cursor: pointer;

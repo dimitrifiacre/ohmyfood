@@ -1,0 +1,26 @@
+@keyframes loader {
+    85% {
+        opacity: 0.80;
+    }
+    100% {
+        opacity: 0;
+        z-index: -10;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(15px);
+        background-color: $color-secondary;
+    }
+    70% {
+        transform: translateY(-10px);
+        background-color: $color-secondary;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
