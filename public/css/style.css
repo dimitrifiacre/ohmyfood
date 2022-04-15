@@ -345,6 +345,11 @@ section {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
+@media screen and (max-width: 768px) {
+  .card__image img {
+    height: 175px;
+  }
+}
 .card__title {
   font-size: 18px;
   margin: 0 0 5px 0;
