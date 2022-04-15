@@ -17,3 +17,8 @@
 * Mettre en place une structure de navigation pour un site web
 * Mettre en œuvre des effets CSS graphiques avancés
 * Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+
+## Résultat
+<a href="https://dimitrifiacre.github.io/ohmyfood/">
+  <img src="https://i.gyazo.com/0d1d96550361b6cc3217db32f7afb394.png">
+</a>
