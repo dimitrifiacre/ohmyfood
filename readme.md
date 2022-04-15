@@ -20,5 +20,5 @@
 
 ## Résultat
 <a href="https://dimitrifiacre.github.io/ohmyfood/">
-  <img src="https://i.gyazo.com/0d1d96550361b6cc3217db32f7afb394.png">
+  <img src="https://i.gyazo.com/1dc4a5a6dc3ae381d9e61cf74a86bb9e.png">
 </a>
