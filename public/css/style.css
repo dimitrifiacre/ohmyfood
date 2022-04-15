@@ -367,6 +367,7 @@ section {
 .menu__list {
   margin: 30px 0 0 28px;
   width: 100%;
+  overflow: hidden;
 }
 .menu__list:first-child {
   margin-left: 0;
@@ -404,6 +405,7 @@ section {
   padding: 12px 22px 12px 10px;
   margin-bottom: 14px;
   animation: menu-list 1s ease both;
+  overflow: hidden;
 }
 .list:nth-child(1) {
   animation-delay: 0.3s;
@@ -435,6 +437,11 @@ section {
 .list:nth-child(10) {
   animation-delay: 3s;
 }
+.list__content, .list__title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .list__title {
   margin: 0 0 4px 0;
   font-size: 18px;
@@ -448,6 +455,36 @@ section {
   font-weight: 700;
   font-size: 14px;
   color: #353535;
+  transition: 0.5s ease-in-out;
+  margin-left: 15px;
+}
+.list__order {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #fff;
+  font-size: 20px;
+  padding: 22.5px 20px;
+  border-radius: 0 15px 15px 0;
+  right: 0;
+  top: 0;
+  transform: translateX(60px);
+  transition: 0.5s ease-in-out;
+}
+.list__icon {
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+}
+.list:hover {
+  cursor: pointer;
+}
+.list:hover .list__price {
+  margin-right: 60px;
+}
+.list:hover .list__order {
+  transform: translateX(0);
+}
+.list:hover .list__icon {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=style.css.map */

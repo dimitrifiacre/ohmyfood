@@ -35,6 +35,7 @@
     &__list {
         margin: 30px 0 0 28px;
         width: 100%;
+        overflow: hidden;
 
         &:first-child {
             margin-left: 0;
@@ -76,6 +77,13 @@
     margin-bottom: 14px;
     animation: menu-list 1s ease both;
     @include list-delay;
+    overflow: hidden;
+
+    &__content, &__title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 
     &__title {
         margin: 0 0 4px 0;
@@ -92,5 +100,41 @@
         font-weight: 700;
         font-size: 14px;
         color: $color-dark_grey;
+        transition: .5s ease-in-out;
+        margin-left: 15px;
+    }
+
+    &__order {
+        position: absolute;
+        background-color: #99E2D0;
+        color: #fff;
+        font-size: 20px;
+        padding: 22.5px 20px;
+        border-radius: 0 15px 15px 0;
+        right: 0;
+        top: 0;
+        transform: translateX(60px);
+        transition: .5s ease-in-out;
+    }
+
+    &__icon {
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .list__price {
+            margin-right: 60px;
+        }
+
+        .list__order {
+            transform: translateX(0);
+        }
+
+        .list__icon {
+            transform: rotate(360deg);
+        }
     }
 }
