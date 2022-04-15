@@ -74,6 +74,9 @@
         flex-direction: row;
         justify-content: space-between;
         gap: 25px;
+        @include tablet-only {
+            flex-direction: column;
+        }
     }
 
     &__step {
@@ -86,6 +89,10 @@
         display: flex;
         margin: 0px 14px;
         transition: .3s;
+        @include tablet-only {
+            width: auto;
+            margin: 0 0 0 14px;
+        }
 
         &:last-child {
             margin: 0 0 0 14px;
@@ -129,6 +136,10 @@
     grid-template-rows: 1fr 1fr; 
     gap: 20px 20px;
     padding: 25px 0 0 0;
+    @include tablet-only {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 
 }
 

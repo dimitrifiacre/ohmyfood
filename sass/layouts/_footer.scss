@@ -15,9 +15,14 @@
     &__list {
         list-style: none;
         padding: 0;
+        margin-bottom: 0;
         display: flex;
         flex-direction: row;
         gap: 25px;
+        @include mobile-only {
+            flex-direction: column;
+            gap: 10px;
+        }
 
         & a:hover {
             text-decoration: underline;

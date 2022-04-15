@@ -9,5 +9,8 @@ section {
     &--footer {
         @include flexbox-center;
         flex-direction: column;
+        @include mobile-only {
+            align-items: flex-start;
+        }
     }
 }
