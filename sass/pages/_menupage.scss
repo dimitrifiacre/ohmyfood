@@ -74,6 +74,8 @@
     border-radius: 15px;
     padding: 12px 22px 12px 10px;
     margin-bottom: 14px;
+    animation: menu-list 1s ease both;
+    @include list-delay;
 
     &__title {
         margin: 0 0 4px 0;

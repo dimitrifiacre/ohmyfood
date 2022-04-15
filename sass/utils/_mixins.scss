@@ -11,3 +11,11 @@
 @mixin box-shadow-hover {
     box-shadow: 0px 4px 8px 5px rgb(0 0 0 / 10%);
 }
+
+@mixin list-delay {
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            animation-delay: #{$i * 0.3}s;
+        }
+    }
+}
