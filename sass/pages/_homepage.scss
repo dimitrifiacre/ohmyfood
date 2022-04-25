@@ -4,9 +4,7 @@
     z-index: 1;
     height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox-center;
     animation: loader 2s 2s ease-out both;
     
     &__container {
