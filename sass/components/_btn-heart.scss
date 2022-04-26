@@ -10,9 +10,7 @@
         position: absolute;
         background: linear-gradient(180deg, $color-primary 0%, $color-secondary 100%);
         background-clip: text;
-        -webkit-background-clip: text;
         color: transparent;
-        -webkit-text-fill-color: transparent;
         transform: scale(0);
         transition: transform 300ms;
     }
@@ -25,9 +23,7 @@
         .btn-heart--outline {
             background: linear-gradient(180deg, $color-primary 0%, $color-secondary 100%);
             background-clip: text;
-            -webkit-background-clip: text;
             color: transparent;
-            -webkit-text-fill-color: transparent;
         }
     }
 }
